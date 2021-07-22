@@ -691,15 +691,15 @@ li {
 }
 
 .content_1 {
-  background-image: url(../img/service-img01@2x.jpg);
+  background-image: url(service-img01@2x.jpg);
 }
 
 .content_2 {
-  background-image: url(../img/service-img02@2x.jpg);
+  background-image: url(service-img02@2x.jpg);
 }
 
 .content_3 {
-  background-image: url(../img/sevice-img03@2x.jpg);
+  background-image: url(sevice-img03@2x.jpg);
 }
 
 .service-title {
@@ -725,7 +725,7 @@ li {
 }
 
 #contact {
-  background-image: url(../img/contact-bgi@2x.jpg);
+  background-image: url(contact-bgi@2x.jpg);
   width: 100%;
   height: 666px;
   background-size: cover;
