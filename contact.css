@@ -1,0 +1,613 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+*, *:before, *:after {
+  /* border-boxを全ての要素に適用する */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  /* フォントサイズの計算に1rem=10pxを使いたいのでhtmlに62.5%を指定 */
+  font-size: 62.5%;
+}
+
+img {
+  /* 指定しておかないと画像の下に微妙な隙間ができてしまうことがある */
+  vertical-align: bottom;
+  width: 100%;
+}
+
+body {
+  letter-spacing: 0.05em;
+  font-family: 'Noto Serif', 'Noto Serif JP', serif;
+  color: #171717;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+p {
+  color: #171717;
+}
+
+a {
+  text-decoration: none;
+  color: #171717;
+}
+
+li {
+  list-style: none;
+}
+
+.section-wrapper {
+  padding: 110px 0 100px 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .section-wrapper {
+    padding: 110px 0 50px 0;
+  }
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .section-inner {
+    padding: 0 15px;
+  }
+}
+
+.section-title {
+  max-width: 1000px;
+  font-size: 6.0rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #282F35;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 3.0rem;
+    padding: 0 15px;
+    margin: 0;
+  }
+}
+
+.section-title::after {
+  vertical-align: middle;
+  display: inline-block;
+  content: '';
+  background: #282F35;
+  width: 200px;
+  height: 5px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-title::after {
+    width: 90px;
+  }
+}
+
+.section-bottom {
+  padding-top: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .section-bottom {
+    padding-top: 40px;
+  }
+}
+
+.section-bottom p {
+  color: #171717;
+  opacity: .1;
+  font-size: 9.0rem;
+  padding: 0 20px;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 767px) {
+  .section-bottom p {
+    font-size: 4.0rem;
+    padding: 0 15px;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-white:after {
+  background: #fff;
+}
+
+.link-btn {
+  display: block;
+  margin: 0 auto;
+  width: 235px;
+  height: 59px;
+  background-color: #F7D43F;
+  border-radius: 100vh;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 59px;
+  -webkit-box-shadow: 0px 0px 6px 1px #000;
+          box-shadow: 0px 0px 6px 1px #000;
+}
+
+.link-btn:hover {
+  opacity: .9;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 44px 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 30px 15px;
+  }
+}
+
+.header.fixed {
+  position: fixed;
+  padding: 30px;
+  width: 100%;
+  background-color: #282F35;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-inner {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-logo a {
+  margin-right: auto;
+  font-size: 2.6rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: 0.07em;
+}
+
+.header-logo a:hover {
+  opacity: 0.5;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #282F35;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.header-nav ul li {
+  list-style: none;
+  padding: 0 13px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav ul li {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+.header-nav ul li:last-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav ul li:last-child {
+    padding-right: 15px;
+  }
+}
+
+.header-nav ul li a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.header-nav ul li a:hover {
+  opacity: 0.5;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.burger-btn {
+  display: none;
+  vertical-align: middle;
+  position: relative;
+  right: 0;
+  height: 20px;
+  width: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .burger-btn {
+    display: block;
+  }
+}
+
+.burger-btn .bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.burger-btn .bar_top {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 0;
+}
+
+.burger-btn .bar_mid {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 10px;
+}
+
+.burger-btn .bar_bottom {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 20px;
+}
+
+.bar_top.open {
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.bar_mid.open {
+  opacity: 0;
+}
+
+.bar_bottom.open {
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.fv_contact {
+  height: 453px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .fv_contact {
+    height: 360px;
+  }
+}
+
+.fv_contact .fv-inner {
+  background-image: url(contact-page-bgi@2x.jpg);
+  height: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fv_contact .fv-inner .main-copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .fv_contact .fv-inner .main-copy {
+    top: 222px;
+  }
+}
+
+.fv_contact .fv-inner .main-copy .en-copy {
+  color: #fff;
+  font-size: 6.0rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 767px) {
+  .fv_contact .fv-inner .main-copy .en-copy {
+    font-size: 33px;
+    height: 51px;
+    margin: 0 0 37px 0;
+  }
+}
+
+.section-bottom_contact {
+  position: absolute;
+  left: 27px;
+  bottom: 54px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-bottom_contact {
+    left: 0;
+  }
+}
+
+.contact-form {
+  height: 629px;
+  max-width: 700px;
+  margin: 100px auto 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form {
+    margin: 100px auto 140px;
+    padding: 0 15px 0 15px;
+  }
+}
+
+.contact-form p {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.contact-form .item {
+  padding: 7px 0 15px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form .item {
+    padding: 15px 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form .item .checkbox {
+    display: block;
+  }
+  .contact-form .item .checkbox:not(:first-child) {
+    padding-top: 5px;
+  }
+}
+
+.contact-form .item .checkbox p {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 2px 3px 2px 14px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form .item .checkbox p {
+    padding: 2px 3px 2px 9px;
+  }
+}
+
+.contact-form .item .label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-bottom: 9px;
+}
+
+.contact-form .item .input {
+  width: 100%;
+  height: 30px;
+}
+
+.contact-form .item textarea {
+  resize: vertical;
+  width: 670px;
+  height: 171px;
+  width: 100%;
+}
+
+.contact-form .submit-button {
+  margin-top: 60px;
+}
+
+.footer {
+  height: 79px;
+  text-align: center;
+}
+
+.footer small {
+  font-size: 1.4rem;
+  line-height: 79px;
+  font-weight: bold;
+}
+
+.footer {
+  height: 79px;
+  text-align: center;
+}
+
+.footer small {
+  font-size: 1.4rem;
+  line-height: 79px;
+  font-weight: normal;
+}
+
+.footer p {
+  font-size: 1.4rem;
+  line-height: 79px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.footer p a {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.footer p a:hover {
+  color: brown;
+  text-decoration: none;
+}
+/*# sourceMappingURL=contact.css.map */
